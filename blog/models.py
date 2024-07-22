@@ -11,4 +11,6 @@ class Post(models.Model):
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     STATUS = ((0, "Draft"), (1, "Published"))
+    excerpt = models.TextField(blank=True)
+    updated_on = models.DateTimeField(auto_now=True)
 
